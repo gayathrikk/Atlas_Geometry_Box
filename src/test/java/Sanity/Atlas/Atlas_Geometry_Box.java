@@ -232,7 +232,7 @@ public class Atlas_Geometry_Box {
 			
 			 
 			 try {
-		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='radio'])[2]")));
+		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='radio'])[3]")));
 		  		    contributor.click();
 		  		    System.out.println("contributor selected successfully.");
 		  		    Thread.sleep(2000);
