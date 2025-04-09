@@ -306,13 +306,14 @@ public class Atlas_Geometry_Box {
 		}
 		
 		@Test(priority=10)
-		public void Box_delete()
+		public void Box_delete() throws InterruptedException
 		{
 			clickElementByXpath("//a[@title='Delete']", "Delete option");
 			clickElementByXpath("//button[text()='Delete']", "Delete button");
 			clickElementByXpath("//a[@title='Save']", "save");
 			System.out.println("Box region deleted successfully");
-			clickElementByXpath("//a[@title='Close']]", "Close");
+			 Thread.sleep(4000);
+			clickElementByXpath("//a[@title='Close']", "Close");
 		}
 		
 		
