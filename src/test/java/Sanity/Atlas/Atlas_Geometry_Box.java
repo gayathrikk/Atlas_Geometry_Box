@@ -166,7 +166,7 @@ public class Atlas_Geometry_Box {
 		        }
 	    	 
 	    	 try {
-	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='370'])[1]")));
+	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='340'])[1]")));
 	  		    section.click();
 	  		    System.out.println("section clicked successfully.");
 	  		    Thread.sleep(2000);
@@ -312,6 +312,7 @@ public class Atlas_Geometry_Box {
 			clickElementByXpath("//button[text()='Delete']", "Delete button");
 			clickElementByXpath("//a[@title='Save']", "save");
 			System.out.println("Box region deleted successfully");
+			clickElementByXpath("//a[@title='Close']]", "Close");
 		}
 		
 		
